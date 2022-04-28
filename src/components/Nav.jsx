@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 function Nav() {
   return (
     <nav>
       <ul>
         <li>
-          <button>All products</button>
+          <Link to="/">All products</Link>
         </li>
         <li>
-          <button>Basket</button>
+          <Link to="/basket">Basket</Link>
         </li>
       </ul>
     </nav>

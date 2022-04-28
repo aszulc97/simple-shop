@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Product from "./Product";
+import Product from "../components/Product";
 
 function ProductList() {
   const [allProducts, setAllProducts] = useState([]);
@@ -15,7 +15,7 @@ function ProductList() {
   return (
     <div id="productList">
       {allProducts.map((product) => (
-        <Product {...product} />
+        <Product key={Math.random()} {...product} />
       ))}
     </div>
   );
